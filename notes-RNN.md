@@ -81,9 +81,10 @@ If we backpropagate more than ~10 timesteps, the gradient will become too small.
 In RNNs we can also have the opposite problem, called the exploding gradient problem, in which the value of the gradient grows uncontrollably. A simple solution for the exploding gradient problem is Gradient Clipping - [On the difficulty of training Recurrent Neural Networks](https://arxiv.org/abs/1211.5063). You can concentrate on Algorithm 1 which describes the gradient clipping idea in simplicity.
 
 # LSTM
+[Paper](http://www.bioinf.jku.at/publications/older/2604.pdf)
 This is a single neuron in RNN.
-
+If we take a close look at the RNN neuron, we can see that we have simple linear combinations (with or without the use of an activation function). We can also see that we have a single addition.
 ![alt text](./images/rnn_neuron.png "RNN neuron")
 
-THis is LSTM Cell
+THis is LSTM Cell. The LSTM cell allows a recurrent system to learn over many time steps without the fear of losing information due to the vanishing gradient problem. It is fully differentiable, therefore gives us the option of easily using backpropagation when updating the weights.
 ![alt text](./images/lstm_cell.png "RNN neuron")

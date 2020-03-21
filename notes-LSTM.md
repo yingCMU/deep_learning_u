@@ -5,6 +5,7 @@
 - [Understanding LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
 - [Exploring LSTMs](http://blog.echen.me/2017/05/30/exploring-lstms/)
 
+## how it works
 - Learn Gate: short term memeory + event , then ignore to keep important parts:
 ![alt text](./images/learn_gate.png "LSTM Learn Gate")
 - forget gate: take long term memory and decide which part to keep and forget. forget science and keep the fact that it's about nature.

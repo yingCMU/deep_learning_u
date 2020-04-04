@@ -1,4 +1,8 @@
 # RNN
+## Readings
+
+- [The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
+
 ## Application
 - RNN's can be used to generate text given any other data. For example, you can give an RNN a feature vector from an image, and use it to [generate a descriptive caption](https://github.com/yunjey/pytorch-tutorial/tree/master/tutorials/03-advanced/image_captioning). Image captions are used to create accessible content and in a number of cases where one may want to read about the contents of an image.
 - RNN's is in generating drawings. Sketch RNN [demo](https://magenta.tensorflow.org/assets/sketch_rnn_demo/index.html) is a program that learns to complete a drawing, once you give it something (a line or circle, etc.) to start!

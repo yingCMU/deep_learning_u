@@ -1,4 +1,7 @@
 # CNN
+## resources
+- [Stanford lecture notes](https://cs231n.github.io/neural-networks-1/)
+
 ## Applications
 - [WaveNet model](https://deepmind.com/blog/article/wavenet-generative-model-raw-audio).
 

@@ -11,7 +11,7 @@ Data normalization is typically done by subtracting the mean (the average of all
 The distribution of such data should resemble a [Gaussian](https://mathworld.wolfram.com/GaussianFunction.html) function centered at zero. For image inputs we need the pixel numbers to be positive, so we often choose to scale the data in a normalized range [0,1].
 
 ## MLP MNIST
-See [note_mnist.md](../note_mnist.md)
+See [note_mnist.md](./note_mnist.md)
 
 ## Image Classification Steps
 ![alt text](./images/![alt text](./images/validation_set.png "validation") "Steps")

@@ -42,3 +42,13 @@ Unlike the uniform distribution, the normal distribution has a higher likelihood
 
 
 The normal distribution gives us pretty similar behavior compared to the uniform distribution, in this case. This is likely because our network is so small; a larger neural network will pick more weight values from each of these distributions, magnifying the effect of both initialization styles. In general, a normal distribution will result in better performance for a model.
+
+## Pytorch Default initialization
+
+Something really interesting is happening here. You may notice that the red line "no weights" looks a lot like our uniformly initialized weights. It turns out that PyTorch has default weight initialization behavior for every kind of layer. You can see that **linear layers are initialized with a uniform distribution** (uniform weights _and_ biases) in [the module source code](https://pytorch.org/docs/stable/_modules/torch/nn/modules/linear.html).
+
+---
+
+However, you can also see that the weights taken from a normal distribution are comparable, perhaps even a little better! So, it may still be useful, especially if you are trying to train the best models, to initialize the weights of a model according to rules that *you* define.
+
+And, this is not the end of your learning path! You're encouraged to look at the different types of [common initialization distributions](https://pytorch.org/docs/stable/nn.html#torch-nn-init). As you continue to learn in the classroom, you'll also see more resources for learning about and practicing weight initialization!

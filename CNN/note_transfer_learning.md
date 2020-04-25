@@ -77,6 +77,10 @@ If using the pre-trained network as a starting point does not produce a successf
 Here is how to visualize this approach:
 ![alt text](./images/c4.png "validation")
 
+## Papers
+- Check out this research [paper-How transferable are features in deep neural networks?](https://arxiv.org/pdf/1411.1792.pdf) that systematically analyzes the transferability of features learned in pre-trained CNNs.
+- Read the Nature publication detailing Sebastian Thrun's cancer-detecting CNN! [Dermatologist-level classification of skin cancer with deep neural networks](https://www.nature.com/articles/nature21056.epdf?referrer_access_token=_snzJ5POVSgpHutcNN4lEtRgN0jAjWel9jnR3ZoTv0NXpMHRAJy8Qn10ys2O4tuP9jVts1q2g1KBbk3Pd3AelZ36FalmvJLxw1ypYW0UxU7iShiMp86DmQ5Sh3wOBhXDm9idRXzicpVoBBhnUsXHzVUdYCPiVV0Slqf-Q25Ntb1SX_HAv3aFVSRgPbogozIHYQE3zSkyIghcAppAjrIkw1HtSwMvZ1PXrt6fVYXt-dvwXKEtdCN8qEHg0vbfl4_m&tracking_referrer=edition.cnn.com)
+
 ## useful layers
 consider CNN & pooling layers as feature extractor , replace the fully connected layers and only train those layers. This is good if your data set is small, and image shapes are similar to the original dataset
 ## Fine tunning

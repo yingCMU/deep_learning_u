@@ -1,4 +1,9 @@
 TODO list
+## CNNs
+1. 1-25, finding edges Notebook
+2. 4.6 [transfer learning](https://classroom.udacity.com/nanodegrees/nd101/parts/2e8d3b5d-aa70-4376-946f-0cdc37127d7d/modules/19a75d10-547d-4497-ae68-609ca1a235fc/lessons/a559990d-e214-4c5d-a424-437f6299383e/concepts/b51b281f-b214-40c7-9293-9b3f1dd19650)
+  - 4.8 solution
+
 ## NN
 1. Juperter: https://classroom.udacity.com/nanodegrees/nd101/parts/09023a41-74e1-4df6-8404-5020a0c94369/modules/09a66188-19aa-4153-b65b-d51cf0225b3c/lessons/c88194ea-b1de-4bf1-b2ec-0c93bb431ea1/concepts/75e1eee0-5f81-4d5b-a1ca-eaebe3c91759
 2. Matrix & Numpy: https://classroom.udacity.com/nanodegrees/nd101/parts/09023a41-74e1-4df6-8404-5020a0c94369/modules/aa7245ac-ca6a-49cf-ad5e-96d9b2dc6e76/lessons/ea7c1b8c-10e1-495b-8658-47b63214165d/concepts/518bd189-d948-4160-91b2-c3a0a04bed1e

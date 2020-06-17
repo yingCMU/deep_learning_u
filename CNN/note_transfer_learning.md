@@ -1,4 +1,6 @@
 # Transfer learning
+Stanford notes: https://cs231n.github.io/transfer-learning/
+
 involves taking a pre-trained neural network and adapting the neural network to a new, different data set.
 
 Depending on both:

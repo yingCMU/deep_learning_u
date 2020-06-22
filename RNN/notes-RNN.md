@@ -1,4 +1,6 @@
 # RNN
+An Elman network is a three-layer network
+
 ## Readings
 
 - [The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)

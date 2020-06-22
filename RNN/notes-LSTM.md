@@ -9,18 +9,24 @@
 ## Other Architectures
 GRUs can be found in the following links: [Michael Guerzhoy's post](http://www.cs.toronto.edu/~guerzhoy/321/lec/W09/rnn_gated.pdf)
 
-## how it works
-- Learn Gate: short term memeory + event , then ignore to keep important parts:
+
+### compare with RNN arch first:
+![alt text](./images/RNN_arch.png "LSTM Learn Gate")
+## how LSTM works
+- Learn Gate: short term memeory + event , then ignore to keep important parts:https://www.youtube.com/watch?v=aVHVI7ovbHY
+
 ![alt text](./images/learn_gate.png "LSTM Learn Gate")
-- forget gate: take long term memory and decide which part to keep and forget. forget science and keep the fact that it's about nature.
+
+- forget gate: take long term memory and decide which part to keep and forget. forget science and keep the fact that it's about nature: https://www.youtube.com/watch?v=iWxpfxLUPSU
+
 ![alt text](./images/forget_gate.png "LSTM Forget Gate")
-- remember gate: take output from learn & forget gate to add them
+- remember gate: take output from learn & forget gate to add them: https://www.youtube.com/watch?v=0qlm86HaXuU
 ![alt text](./images/remember_gate.png "LSTM remember_gate")
-- use gate: take longterm memoery(from forget gate) and short term memory(learn gate), came out a new short term memoery
+- use gate: take longterm memoery(from forget gate) and short term memory(learn gate), came out a new short term memoery: https://www.youtube.com/watch?v=5Ifolm1jTdY
 ![alt text](./images/user_gate.png "LSTM user_gate")
 
 
-put it all together:
+put it all together: https://www.youtube.com/watch?v=IF8FlKW-Zo0
 ![alt text](./images/lstm_func.png "LSTM lstm_func")
 ![alt text](./images/lstm_diagram.png "LSTM lstm_diagram")
 ![alt text](./images/lstm_cell.png "LSTM lstm_cell")
@@ -44,6 +50,15 @@ Adding a saving mechanism. When the model sees a new image, it needs to learn wh
 So when new a input comes in, the model first forgets any long-term information it decides it no longer needs. Then it learns which parts of the new input are worth using, and saves them into its long-term memory.
 Focusing long-term memory into working memory. Finally, the model needs to learn which parts of its long-term memory are immediately useful. For example, Bob's age may be a useful piece of information to keep in the long term (children are more likely to be crawling, adults are more likely to be working), but is probably irrelevant if he's not in the current scene. So instead of using the full long-term memory all the time, it learns which parts to focus on instead.
 This, then, is an long short-term memory network. Whereas an RNN can overwrite its memory at each time step in a fairly uncontrolled fashion, an LSTM transforms its memory in a very precise way: by using specific learning mechanisms for which pieces of information to remember, which to update, and which to pay attention to. This helps it keep track of information over longer periods of time.
+
+## Representing Memory
+You’ve learned that RNN’s work well for sequences of data because they have a kind of memory. This memory is represented by something called the hidden state.
+
+In the character-level LSTM example, each LSTM cell, in addition to accepting a character as input and generating an output character, also has some hidden state, and each cell will pass along its hidden state to the next cell.
+
+This connection creates a kind of memory by which a series of cells can remember which characters they’ve just seen and use that information to inform the next prediction!
+
+For example, if a cell has just generated the character a it likely will not generate another a, right after that!
 
 ## TODO
 1. don't quite understand lstm 2.10 quiz
